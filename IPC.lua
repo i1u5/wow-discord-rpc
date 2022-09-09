@@ -98,7 +98,7 @@ function IPC_EncodeMessage()
     local _, instanceType, _, difficultyName, _,
     _, _, _, _, _ = GetInstanceInfo()
     local playerLevel = UnitLevel("player")
-    local memberCount = GetNumGroupMembers() -- Use GetNumPartyMembers() for <5.0.4
+    local memberCount = GetNumPartyMembers() -- Use GetNumPartyMembers() for <5.0.4
     local mapID, _ = GetCurrentMapAreaID()
     local details
     if zoneName == nil then zoneName = UnknownZoneName end
